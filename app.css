@@ -1,0 +1,219 @@
+/*app*/
+.headerbox{
+	background-image:url(img/app/appbg.jpg);
+	width: 100%;
+	height: 600px;
+	background-position: center;
+	background-size: cover;
+}
+.andiord,.apple{
+	display: block;
+	float: left;
+	width:207px;
+	height: 53px;
+	background: center no-repeat;
+	transition: all 1s;
+	margin-bottom: 20px;
+}
+.andiord{
+	background:url(img/app/andiord.png);	
+	margin-right: 20px;
+}
+.andiord:hover{
+	background:url(img/app/andiord1.png);
+}
+.apple{
+	background: url(img/app/apple.png);
+}
+.apple:hover{
+	background: url(img/app/apple1.png);
+}
+.phoneshow{
+	width: 400px;
+	height: 600px;
+	float: left;
+	margin-top:150px;
+	padding-left: 60px;
+}
+.appinfo{
+	width: auto;
+	height: 600px;
+	float: left;
+	color: #fff;
+	padding-top:240px;
+	padding-left: 10%;
+}
+.downbtn{
+	margin:0;
+	padding: 20px 0;
+}
+.downbtn img:hover{
+	opacity: 0.8;
+}
+.apptitle1{
+	font-size: 36px;
+	margin: 0;
+}
+.apptitle2{
+	margin:0;
+	font-size: 24px;
+}
+.codetext{
+	margin-top: 10px;
+}
+.appdetail{
+	list-style: none;
+	clear: both;
+}
+.appdetail li{
+	width: 25%;
+	float: left;
+	height: 400px;
+	overflow: hidden;
+	padding-top: 50px;
+	text-align: center;
+}
+.appdetail li img:hover{
+	-webkit-animation: flip 2s;
+	animation: flip 2s;
+}
+.appdetail p{
+	color:#626262;
+	text-align:left;
+	padding:20px 60px;
+	font-size: 15px;
+	font-weight:bold;
+}
+@-webkit-keyframes flip {
+	0% {
+		-webkit-transform: perspective(800px) rotate3d(0, 1, 0, -360deg);
+		transform: perspective(800px) rotate3d(0, 1, 0, -360deg);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out
+	}
+	40% {
+		-webkit-transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out
+	}
+	50% {
+		-webkit-transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+	80% {
+		-webkit-transform: perspective(800px) scale3d(.95, .95, .95);
+		transform: perspective(800px) scale3d(.95, .95, .95);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+	100% {
+		-webkit-transform: perspective(800px);
+		transform: perspective(800px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+}
+
+@keyframes flip {
+	0% {
+		-webkit-transform: perspective(800px) rotate3d(0, 1, 0, -360deg);
+		-ms-transform: perspective(800px) rotate3d(0, 1, 0, -360deg);
+		transform: perspective(800px) rotate3d(0, 1, 0, -360deg);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out
+	}
+	40% {
+		-webkit-transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		-ms-transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+		-webkit-animation-timing-function: ease-out;
+		animation-timing-function: ease-out
+	}
+	50% {
+		-webkit-transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		-ms-transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		transform: perspective(800px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+	80% {
+		-webkit-transform: perspective(800px) scale3d(.95, .95, .95);
+		-ms-transform: perspective(800px) scale3d(.95, .95, .95);
+		transform: perspective(800px) scale3d(.95, .95, .95);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+	100% {
+		-webkit-transform: perspective(800px);
+		-ms-transform: perspective(800px);
+		transform: perspective(800px);
+		-webkit-animation-timing-function: ease-in;
+		animation-timing-function: ease-in
+	}
+}
+
+@media (max-width: 1024px) {
+	.phoneshow {
+		display: none;
+	}
+	.headerbox .container {
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.appinfo {
+		padding-left: 0;
+		padding-top: 0;
+		height:auto;
+	}
+	.downbtn .codetext {
+		text-align:center;
+	}
+	.appdetail li {
+		width: 50%;
+	}
+}
+
+@media (max-width: 500px) {
+	.headerbox .container {
+		height: 600px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align:center;
+	}
+	
+	.downbtn a{
+		text-align:center;
+	}
+	
+	.andiord {
+		margin-right: 0;
+	}
+	
+	.downbtn {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.apptitle1 {
+		font-size: 30px;
+	}
+	.apptitle2 {
+		font-size: 20px;
+		margin:15px 0;
+	}
+	
+	.appdetail {
+		-webkit-padding-start: 0;
+	}
+	.appdetail li {
+		width: 100%;
+		height: auto;
+	}
+}
